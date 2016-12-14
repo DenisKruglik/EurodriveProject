@@ -35,16 +35,35 @@
 	<div>
 		<label>
 			<span>Время</span><br>
-			<input type="time" name="time" required>
+			<select name="time" required>
+				<option>6:00</option>
+				<option>7:00</option>
+				<option>8:00</option>
+				<option>9:00</option>
+				<option>10:00</option>
+				<option>11:00</option>
+				<option>12:00</option>
+				<option>13:00</option>
+				<option>14:00</option>
+				<option>15:00</option>
+				<option>16:00</option>
+				<option>17:00</option>
+				<option>18:00</option>
+				<option>19:00</option>
+				<option>20:00</option>
+			</select>
 		</label>
 	</div>
 	<div>
 		<label>
 			<span>Место посадки:</span><br>
 			<select name="onset" required>
-				<option>ст.м. Институт культуры</option>
-				<option>Малиновка</option>
-				<option>Грушевка</option>
+				<option>Военный городок</option>
+				<option>Улица Советская</option>
+				<option>Церковь</option>
+				<option>ст. м. Могилёвская</option>
+				<option>ст. м. Автозаводская</option>
+				<option>ЖД вокзал</option>
 			</select>
 		</label>
 	</div>
@@ -52,9 +71,12 @@
 		<label>
 			<span>Место высадки:</span><br>
 			<select name="destination" required>
-				<option>ул. Притыцкого</option>
-				<option>ул. Коммунистическая</option>
-				<option>площадь Ленина</option>
+				<option>ст. м. Могилёвская</option>
+				<option>ст. м. Автозаводская</option>
+				<option>ЖД вокзал</option>
+				<option>Военный городок</option>
+				<option>Улица Советская</option>
+				<option>Церковь</option>
 			</select>
 		</label>
 	</div><br>
@@ -90,6 +112,9 @@
 	</div><br>
 	<div>
 		<input type="button" name="rate" value="Оценить поездку" id="rate">
+	</div><br>
+	<div>
+		<input type="reset" name="reset" value="Сбросить форму">
 	</div>
 </form>
 </body>
