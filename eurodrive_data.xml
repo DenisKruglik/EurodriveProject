@@ -1,0 +1,51 @@
+<content>
+	<form>
+		<directions>
+			<city>Минск</city>
+			<city>Гомель</city>
+		</directions>
+		<stops>
+			<stop>Военный городок</stop>
+			<stop>Улица Советская</stop>
+			<stop>Церковь</stop>
+			<stop>Гастроном Юбилейный</stop>
+			<stop>Техникум</stop>
+			<stop>Детская поликлиника</stop>
+			<stop>Парк</stop>
+			<stop>Евроопт</stop>
+			<stop>Дудичи</stop>
+			<stop>Козловичи</stop>
+			<stop>Озаричи</stop>
+			<stop>Полесье</stop>
+			<stop>Памятник о. Багратион</stop>
+			<stop>Михайловка</stop>
+			<stop>Козловка</stop>
+			<stop>Паричи</stop>
+			<stop>Марьина горка</stop>
+			<stop>Дукора</stop>
+			<stop>Привольный</stop>
+			<stop>Шабаны</stop>
+			<stop>ст. м. Могилёвская</stop>
+			<stop>ст. м. Автозаводская</stop>
+			<stop>ЖД вокзал</stop>
+			<stop>Минск</stop>
+		</stops>
+		<time>
+			<point>6:00</point>
+			<point>7:00</point>
+			<point>8:00</point>
+			<point>9:00</point>
+			<point>10:00</point>
+			<point>11:00</point>
+			<point>12:00</point>
+			<point>13:00</point>
+			<point>14:00</point>
+			<point>15:00</point>
+			<point>16:00</point>
+			<point>17:00</point>
+			<point>18:00</point>
+			<point>19:00</point>
+			<point>20:00</point>
+		</time>
+	</form>
+</content>
