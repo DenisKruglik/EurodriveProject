@@ -26,9 +26,9 @@ function serve(){
 			document.getElementById('container').innerHTML=this.responseText;
 			if (path=="main.html") {fr.event("click",get.byId('b'),function(){location.hash="#broning"})}
 			if (path=="broning.html") {fr.event("click",get.byId('notif'),function(){
-				if (get.byId('tel').value!="") {
-					alert("Оповещение будет отправлено на Ваш номер");
-				}else alert("Введите свой телефонный номер в соответствующее поле");
+				if (get.byId('tel').value.length<7 || !Number(get.byId('tel').value)) {
+					alert("Введите корректный телефонный номер в соответствующее поле");
+				}else alert("Оповещение будет отправлено на Ваш номер");
 		})}
 			if (path=="broning.html") {fr.event("click",get.byId('rate'),function(){
 				for (;;) {
