@@ -1,28 +1,293 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Eurodrive - онлайн-бронирование маршрутного такси</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="main.css">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="shortcut icon" type="image/png" href="images/logo.png">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<title>Eurodrive - Онлайн-бронирование маршрутного такси</title>
 </head>
 <body>
-<header>
-	<hgroup>
-		<a id="mt" href="#main"><h1>Eurodrive</h1></a>
-		<p>Онлайн-бронирование маршрутного такси</p>
-	</hgroup>	<br>
-	<nav>
-		<span class="n"><a href="#broning" id="bron">Бронирование</a></span>
-		<span class="n"><a href="#stops" id="stop">Остановки</a></span>
-		<span class="n"><a href="#contacs" id="conts">Контакты</a></span>
-		<span class="n"><a href="#faq" id="faq">FAQ</a></span>
-	</nav>
-</header>
-<div id="container"></div>
-<footer>
-	<p>© 2016 Eurodrive.com</p>
-</footer>
-<script type="text/javascript" src="myframework.js"></script>
-<script type="text/javascript" src="script.js"></script>
+	
+	<div class="menu">	
+		<a href="index.html">
+			<img id="logo" src="images/logo.png">
+			<img id="text-logo" src="images/text-logo.png">
+		</a>
+			<ul class="ul-menu">
+				<li><a href="#bronning">БРОНИРОВАНИЕ</a></li>
+				<li><a href="#stops">ОСТАНОВКИ</a></li>
+				<li><a href="#contacts">КОНТАКТЫ</a></li>
+				<li><a href="#faq">FAQ</a></li>
+			</ul>
+		
+	</div>
+
+
+
+<div class="adv-bg">
+	<div class="adv">
+			<div class="block" id="1">	
+				<h3>ОНЛАЙН-БРОНИРОВАНИЕ</h3>
+				<p>Смартфон, планшет, компьютер, любое устройство. Экономим время и деньги!</p>
+			</div>
+			<div class="block" id="2">
+				<h3>ОТЛИЧНАЯ ЦЕНА</h3>	
+				<p>Гомель-Минск всего 7 руб.</p>
+			</div>
+			<div class="block" id="3">	
+				<h3>СОВРЕМЕННЫЙ АВТОПАРК</h3>
+				<p>У нас хороший автопарк, который насчитывает более 30 микроавтобусов</p>
+			</div>
+			<div class="block" id="4">
+				<h3>КАЖДЫЙ ЧАС</h3>	
+				<p>Отправление рейсов присходит каждый час без задержек и форс-мажоров</p>
+			</div>
+			<div class="block" id="5">	
+				<h3>БЕСПЛАТНЫЙ WI-FI</h3>
+				<p>В каждой нашей маршрутке бесплатный скоростной Wi-Fi интернет для наших пассажиров</p>
+			</div>
+			<div class="block" id="6">	
+				<h3>ДОВОЛЬНЫЕ КЛИЕНТЫ</h3>
+				<p>Около 100 человек каждый день пользуются нашими услугами и уже получают дополнительные бонусы</p>
+			</div>
+</div>
+	</div>
+
+<div class="bg-form">
+	<div class="form" id="bronning">
+	<br><h3>Онлайн-бронирование</h3>
+		<form id="form">
+			<div>
+				<label>
+					<span>Направление</span><br>
+					<select name="direction" required>
+						<option value="Минск-Гомель">Минск-Гомель</option>
+						<option value="Гомель-Минск">Гомель-Минск</option>
+					</select>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>E-mail</span><br>
+					<input type="email" name="email" placeholder="name@example.com">
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Дата</span><br>
+					<input type="date" name="date" required>
+				</label>
+			</div><br>
+			<div>
+				<label>
+					<span>Время</span><br>
+					<select name="time" required>
+						<option value="6:00">6:00</option>
+						<option value="7:00">7:00</option>
+						<option value="8:00">8:00</option>
+						<option value="9:00">9:00</option>
+						<option value="10:00">10:00</option>
+						<option value="11:00">11:00</option>
+						<option value="12:00">12:00</option>
+						<option value="13:00">13:00</option>
+						<option value="14:00">14:00</option>
+						<option value="15:00">15:00</option>
+						<option value="16:00">16:00</option>
+						<option value="17:00">17:00</option>
+						<option value="18:00">18:00</option>
+						<option value="19:00">19:00</option>
+						<option value="20:00">20:00</option>
+					</select>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Место посадки</span><br>
+					<select name="onset" required>
+						<option class="fromgomel" value="Военный городок">Военный городок</option>
+						<option class="fromgomel" value="Улица Советская">Улица Советская</option>
+						<option class="fromgomel" value="Церковь">Церковь</option>
+						<option class="fromgomel" value="Гастроном Юбилейный">Гастроном Юбилейный</option>
+						<option class="fromgomel" value="Техникум">Техникум</option>
+						<option class="fromgomel" value="Детская поликлиника">Детская поликлиника</option>
+						<option class="fromgomel" value="Парк">Парк</option>
+						<option class="fromgomel" value="Евроопт">Евроопт</option>
+						<option class="fromminsk" value="ст. м. Могилёвская">ст. м. Могилёвская</option>
+						<option class="fromminsk" value="ст. м. Автозаводская">ст. м. Автозаводская</option>
+						<option class="fromminsk" value="ЖД вокзал">ЖД вокзал</option>
+					</select>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Место высадки</span><br>
+					<select name="destination" required>
+						<option class="togomel" value="Военный городок">Военный городок</option>
+						<option class="togomel" value="Улица Советская">Улица Советская</option>
+						<option class="togomel" value="Церковь">Церковь</option>
+						<option class="togomel" value="Гастроном Юбилейный">Гастроном Юбилейный</option>
+						<option class="togomel" value="Техникум">Техникум</option>
+						<option class="togomel" value="Детская поликлиника">Детская поликлиника</option>
+						<option class="togomel" value="Парк">Парк</option>
+						<option class="togomel" value="Евроопт">Евроопт</option>
+						<option value="Дудичи">Дудичи</option>
+						<option value="Козловичи">Козловичи</option>
+						<option value="Озаричи">Озаричи</option>
+						<option value="Михайловка">Михайловка</option>
+						<option value="Козловка">Козловка</option>
+						<option value="Паричи">Паричи</option>
+						<option value="Марьина горка">Марьина горка</option>
+						<option value="Дукора">Дукора</option>
+						<option value="Привольный">Привольный</option>
+						<option value="Шабаны">Шабаны</option>
+						<option class="tominsk" value="ст. м. Могилёвская">ст. м. Могилёвская</option>
+						<option class="tominsk" value="ст. м. Автозаводская">ст. м. Автозаводская</option>
+						<option class="tominsk" value="ЖД вокзал">ЖД вокзал</option>
+					</select>
+				</label>
+			</div><br>
+			<div>
+				<label>
+					<span>Фамилия</span><br>
+					<input type="text" name="surname" placeholder="Иванов" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Имя</span><br>
+					<input type="text" name="name" placeholder="Иван" required>
+				</label>
+			</div>
+			<div>
+				<label>
+					<span>Телефон</span><br>
+					<input type="tel" name="tel" id="tel" placeholder="+375xxxxxxxxx" pattern="[+][3][7][5][0-9]{9}" required>
+				</label>
+			</div><br>
+			<div>
+				<label>
+					<span>Комментарий</span><br>
+					<textarea name="comment"></textarea>
+				</label>
+			</div><br>
+			<div>
+				<input type="submit" name="sub" value="ЗАБРОНИРОВАТЬ" id="send">
+			</div>
+			<div>
+				<input type="reset" name="res" value="СБРОСИТЬ" id="reset">
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="bg-stops">
+	<div class="stops" id="stops">
+		<div class="block-stops" id="STOPS">
+			<h3>ОСТАНОВКИ</h3>
+		<div class="list">
+			<ul>
+				<li>Гомель</li>
+				<li>Военный городок</li>
+				<li>Улица Советская</li>
+				<li>Церковь</li>
+				<li>Гастроном Юбилейный</li>
+				<li>Техникум</li>
+				<li>Детская поликлиника</li>
+				<li>Парк</li>
+				<li>Евроопт</li>
+				<li>Дудичи</li>
+				<li>Козловичи</li>
+				<li>Озаричи</li>
+				<li>Михайловка</li>
+				<li>Козловка</li>
+				<li>Паричи</li>
+				<li>Марьина горка</li>
+				<li>Дукора</li>
+				<li>Привольный</li>
+				<li>Шабаны</li>
+				<li>ст. м. Могилёвская</li>
+				<li>ст. м. Автозаводская</li>
+				<li>ЖД вокзал</li>
+				<li>Минск</li>
+			</ul>
+		</div>
+		</div>
+		<div class="block-stops" id="map">
+			<h3>КАРТА</h3>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1224741.048831489!2d28.148917170867463!3d53.162740946813116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x46dbcfd35b1e6ad3%3A0xb61b853ddb570d9!2z0JzQuNC90YHQug!3m2!1d53.904539799999995!2d27.5615244!4m5!1s0x46d4699b50faf1a5%3A0x5ecca30fd2361396!2z0JPQvtC80LXQu9GM!3m2!1d52.4411761!2d30.9878462!5e0!3m2!1sru!2sby!4v1482348837089" width="400" height="640" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
+
+<div class="bg-contacts">
+	<div class="contacts" id="contacts">
+		
+		<section id="c">
+		<h4 id="contacts-h3">КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
+		<div class="contacts-content">
+			<div id="title" class="intable">
+				<b>Диспетчерская служба</b><br>
+				<sup>(время работы ежедневно и круглосуточно)</sup><br>
+				<span>
+					<b>8 (033) 1234567 (МТС)</b> многоканальный<br>
+					<b>8 (029) 1234567 (ВЕЛКОМ)</b> многоканальный<br>
+					<b>8 (025) 1234567 (ЛАЙФ)</b> многоканальный
+				</span>
+			</div>
+			<div id="info">
+				<b>Спецобслуживание</b><br>
+				<sup>(время работы 9.00-21.00 ежедневно)</sup><br>
+				<b>8 (033) 9999999 (МТС)</b> Менеджер<br>
+				order@eurodrive.by
+			</div><br>
+			<div id="mail"><b>info@eurodrive.by</b></div>
+		</section>
+	</div>
+</div>	
+
+<div class="bg-faq">
+	<div class="faq-container" id="faq">
+		
+		<h3 id="faq-h3">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h3>
+			<section id="sec1">
+				<div class="faq">
+					<h3>Какой багаж мы можем перевозить?</h3>
+						Пассажир имеет право бесплатно перевозить маломерную ручную кладь (пакет, сумку, зонт и т.д.) Ручная кладь располагается под ногами либо на полках автобуса. При желании перевозки багажа (чемодан, объемная сумка и т.д.) заранее уточняйте у диспетчера наличие багажного отделения в автобусе. Также при перевозке багажа пассажир может забронировать и оплатить дополнительное место в автобусе, что гарантирует 100% размещение багажа в автобусе.
+				</div>
+				<div class="faq">
+					<h3>За сколько начинается посадка в автобус?</h3>
+						Время отправления регламентировано в зависимости от места посадки. Вы можете узнать точное время отправления на нашем сайте, при выборе определенной остановки, либо уточнять точное время у диспетчера.
+				</div><br>
+				<div class="faq">
+					<h3>За какое время можно бронировать билеты?</h3>
+						Бронировать билеты можно максимально за 30 дней до поездки, но при наличии свободных мест можно и день в день. Оптимальным временем бронирования считается 2-5 дней до предполагаемой поездки. Бронирование за несколько суток до поездки – это гарантия наличия свободных мест в автобусе.<br>Внимание: не забывайте снимать бронь не позднее чем за 1 час до отправления у диспетчеров либо онлайн, чтобы исключить попадание в черный список непорядочных клиентов!
+				</div>
+				<div class="faq">
+					<h3>Можно ли передать посылку с автобусом?</h3>
+						Наша компания не занимается передачей посылок. Стоимость и решение взять или нет передачу принимает непосредственно водитель. Вы можете узнать телефон водителя, который отправляется в нужное Вам время в диспетчерской и договориться с ним лично.
+				</div>
+			</section>
+			<section id="extra">
+				<h3 id="service">Дополнительные услуги</h3>
+				Наша компания уже более пяти лет радует своих клиентов серьезным подходом к делу и качественным сервисом. Осуществляя пассажирские перевозки, мы стремимся сделать каждую поездку максимально удобной и безопасной. Сегодня каждому клиенту особенно ценны комфорт во время передвижения, безопасность на дороге и экономия времени. Все эти составляющие и есть философия компании «Eurodrive». В перечень оказываемых нами услуг входят:<br>
+				<ul>
+					<li>Экскурсионное обслуживание</li>
+					<li>Международные перевозки на автобусах от 8 до 70 пассажирских мест (страны СНГ, Европы)</li>
+					<li>Обслуживание свадеб</li>
+					<li>Организация корпоративных выездов</li>
+				</ul>
+			</section>
+
+			</div>
+</div>
+		<div class="f-container">
+			<footer class="footer"> 
+				© 2016 Eurodrive.com
+			</footer>
+		</div>
+
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
