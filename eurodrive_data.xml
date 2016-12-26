@@ -1,34 +1,31 @@
 <content>
 	<form>
 		<directions>
-			<city>Минск</city>
-			<city>Гомель</city>
+			<direction>Минск-Гомель</direction>
+			<direction>Гомель-Минск</direction>
 		</directions>
 		<stops>
-			<stop>Военный городок</stop>
-			<stop>Улица Советская</stop>
-			<stop>Церковь</stop>
-			<stop>Гастроном Юбилейный</stop>
-			<stop>Техникум</stop>
-			<stop>Детская поликлиника</stop>
-			<stop>Парк</stop>
-			<stop>Евроопт</stop>
-			<stop>Дудичи</stop>
-			<stop>Козловичи</stop>
-			<stop>Озаричи</stop>
-			<stop>Полесье</stop>
-			<stop>Памятник о. Багратион</stop>
-			<stop>Михайловка</stop>
-			<stop>Козловка</stop>
-			<stop>Паричи</stop>
-			<stop>Марьина горка</stop>
-			<stop>Дукора</stop>
-			<stop>Привольный</stop>
-			<stop>Шабаны</stop>
-			<stop>ст. м. Могилёвская</stop>
-			<stop>ст. м. Автозаводская</stop>
-			<stop>ЖД вокзал</stop>
-			<stop>Минск</stop>
+			<stop location="Гомель">Военный городок</stop>
+			<stop location="Гомель">Улица Советская</stop>
+			<stop location="Гомель">Церковь</stop>
+			<stop location="Гомель">Гастроном Юбилейный</stop>
+			<stop location="Гомель">Техникум</stop>
+			<stop location="Гомель">Детская поликлиника</stop>
+			<stop location="Гомель">Парк</stop>
+			<stop location="Гомель">Евроопт</stop>
+			<stop location="Дудичи">Дудичи</stop>
+			<stop location="Козловичи">Козловичи</stop>
+			<stop location="Озаричи">Озаричи</stop>
+			<stop location="Михайловка">Михайловка</stop>
+			<stop location="Козловка">Козловка</stop>
+			<stop location="Паричи">Паричи</stop>
+			<stop location="Марьина горка">Марьина горка</stop>
+			<stop location="Дукора">Дукора</stop>
+			<stop location="Привольный">Привольный</stop>
+			<stop location="Шабаны">Шабаны</stop>
+			<stop location="Минск">ст. м. Могилёвская</stop>
+			<stop location="Минск">ст. м. Автозаводская</stop>
+			<stop location="Минск">ЖД вокзал</stop>
 		</stops>
 		<time>
 			<point>6:00</point>
@@ -48,4 +45,36 @@
 			<point>20:00</point>
 		</time>
 	</form>
+	<clients>
+		<client name="Вася" surname="Пупкин" id="L228666" tel="+375299282154" email="megavasya666@mail.ru">
+			<direction>Минск-Гомель</direction>
+			<onset>Малиновка</onset>
+			<destination>Площадь Ленина</destination>
+			<date>16-10-2016</date>
+			<time>16:00</time>
+		</client>
+		<client name="Коля" surname="Соболев" id="L837465" tel="+375298576432" email="soboloevkolya98@mail.ru">
+			<direction>Минск-Гомель</direction>
+			<onset>Грушевка</onset>
+			<destination>ул. Притыцкого</destination>
+			<date>16-10-2016</date>
+			<time>16:00</time>
+			<comment>Хотелось бы, чтобы водитель не включал шансон на всю машину.</comment>
+		</client>
+		<client name="Лена" surname="Ковалёва" id="L098345" tel="+375339585632" email="leno4ka89@mail.ru">
+			<direction>Минск-Гомель</direction>
+			<onset>ст.м. Институт культуры</onset>
+			<destination>Площадь Ленина</destination>
+			<date>19-10-2016</date>
+			<time>19:00</time>
+		</client>
+		<client name="Валя" surname="Балагова" id="L876543" tel="+375290987654" email="valuha23@mail.ru">
+			<direction>Минск-Гомель</direction>
+			<onset>Грушевка</onset>
+			<destination>Площадь Ленина</destination>
+			<date>20-10-2016</date>
+			<time>13:00</time>
+			<comment>Напишите где-нибудь в машине пароль от wi-fi.</comment>
+		</client>
+	</clients>
 </content>
