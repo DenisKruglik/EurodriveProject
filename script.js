@@ -3,6 +3,7 @@ var App={
 		App.setFormEvents();
 		App.setLocalStorage();
 		App.syncLocalStorage();
+		App.scrollRef();
 	},
 	setFormEvents:function(){
 		$('#form').submit(function(e){
@@ -72,6 +73,39 @@ var App={
 			var destination=$('select[name=direction]')[0];
 			App.switchSelect(destination);
 		})
+	},
+	scrollRef:function(){
+		var cl=new Event('click');
+		$('.ul-menu a').click(function(e){
+			e.preventDefault();
+			var elem=$(""+this.getAttribute('href'))[0];
+			App.scrollStart(elem);
+			for (var i = 0; i < 4; i++) {
+				this.dispatchEvent(cl);
+			}
+		})
+		$('.menu > a').click(function(e){
+			e.preventDefault();
+			App.scrollTop();
+		})
+	},
+	scrollStart:function(elem){
+		var scrInterval=setInterval(function(){
+			if (elem.offsetTop > window.scrollY)
+				window.scrollBy(0,2);
+			else window.scrollBy(0,-2);
+			if (window.scrollY==elem.offsetTop) {
+				clearInterval(scrInterval);
+			}
+		},1);
+	},
+	scrollTop:function(){
+		var scrTop=setInterval(function(){
+			window.scrollBy(0,-20);
+			if (!window.scrollY) {
+				clearInterval(scrTop);
+			}
+		},5);
 	}
 }
 App.init();
